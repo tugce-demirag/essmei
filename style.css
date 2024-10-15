@@ -114,6 +114,19 @@ nav a, .filters {
   margin-left: 5px;
 }
 
+.filters ul {
+  margin-left: 0px;
+
+}
+
+.filters li{
+  display: inline;
+  text-align: none;
+}
+
+.show-filters {
+  display: none;
+}
 
 .filters .selected {
   font-weight: 700;
@@ -148,6 +161,11 @@ div .product {
   left: 15px;
 }
 
+
+.filters .show-filters {
+  color: #bfbfb7;
+}
+
 .overlay {
   opacity: 0;
   position: absolute;
@@ -157,6 +175,8 @@ div .product {
   left: 0;
   top: 0;
   padding: 15px;
+  /* we declare transition animation on the element we hide with opacity: 0; */
+  transition: opacity 0.7s cubic-bezier(0.29, 0, 0.41, 0.97);
 }
 
 .product:hover .overlay{
@@ -165,4 +185,74 @@ div .product {
 
 
 
+@media (max-width:860px){
+  .hero {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
 
+  div .product {
+    width: 50%;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .products {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 770px){
+  .hero {
+    background-image: none;
+    background-color: #bfbfb7;
+  }
+
+  .intro {
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px){
+  .intro h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media (max-width:480px){
+  body {
+    font-size: 16px;
+  }
+
+  div .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .filters li{
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .show-filters {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+
+}
