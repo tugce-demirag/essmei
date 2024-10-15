@@ -1,0 +1,168 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+img {
+  overflow-clip-margin: none;
+  overflow: none;
+}
+
+header h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+
+
+
+
+
+
+body {
+  font-size: 20px;
+  line-height: 1.3;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+header {
+  background-color: #000;
+  border-top: solid #feea34 5px;
+  max-height: fit-content;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+header h1 img {
+  max-width: 74px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center right;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  margin-bottom: 35px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.intro {
+  max-width: 470px;
+  line-height: 1.3;
+}
+
+
+
+nav a, .filters {
+  color:#000;  
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+
+.filters .selected {
+  font-weight: 700;
+  border-bottom: solid 3px #feea34;
+  padding-bottom: 1px;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div .product {
+  width: 33.333%;
+  line-height: 0;
+  position: relative;
+}
+
+.products {
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.product h4 {
+  font-size: 20px;
+}
+
+.product p{
+  font-size: 36px;
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(254, 234, 52, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 15px;
+}
+
+.product:hover .overlay{
+  opacity: 1;
+}
+
+
+
+
