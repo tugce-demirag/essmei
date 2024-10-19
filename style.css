@@ -260,3 +260,12 @@ div .product {
 
 
 }
+
+/* in some device dimentions our filters are dissappearing especially if the latest sate
+was hidden. so we make sure this display block is applied when we switched to bigger screens*/
+
+@media (min-width:480px){
+  .filters-list {
+    display: block !important;
+  }
+}
