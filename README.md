@@ -1,4 +1,4 @@
-# Essmei - Lesson 4
+# Essmei - Chapter 05 
 
 Essmei is the name of the project that I build while following a course, Foundation html css & javascript. 
 
